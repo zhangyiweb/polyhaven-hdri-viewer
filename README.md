@@ -57,12 +57,22 @@ npm run dev
 
 ### 构建
 
+**本地静态部署**（资源路径为 `/`）：
+
 ```bash
 npm run build
 npm run preview
 ```
 
-构建产物输出到 `dist/` 目录。
+**GitHub Pages 部署**（资源路径含仓库名 `/polyhaven-hdri-viewer/`）：
+
+```bash
+npm run build:pages
+```
+
+构建产物输出到 `dist/` 目录。推送到 GitHub 后，访问：
+
+https://zhangyiweb.github.io/polyhaven-hdri-viewer/
 
 ## 项目结构
 
@@ -87,7 +97,8 @@ hdr/
 1. 启动后从左侧列表选择 HDRI，即可在右侧预览环境光照与背景。
 2. 点击 **导入 GLB 模型** 加载模型，用鼠标拖拽旋转、滚轮缩放视图。
 3. 左键点击模型表面，在右侧面板编辑材质与贴图；可调整 UV 后导出模型。
-4. 需要离线分享时，执行 `npm run build`，将 `dist/` 部署到任意静态服务器即可。
+4. 本地离线分享：执行 `npm run build`，将 `dist/` 部署到网站根路径即可。
+5. GitHub Pages：执行 `npm run build:pages` 后提交 `dist/`，或在仓库 Settings → Pages 中从 `main` 分支的 `/dist` 目录发布。
 
 ## 说明
 
