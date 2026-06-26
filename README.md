@@ -2,6 +2,8 @@
 
 基于 **Three.js + Vite** 的在线 HDRI 浏览器。可从 [Poly Haven](https://polyhaven.com/zh) 浏览环境贴图、实时预览光照与背景，并支持导入 GLB 模型进行材质编辑与导出。
 
+**在线访问：** https://zhangyiweb.github.io/polyhaven-hdri-viewer/
+
 ## 功能
 
 ### HDRI 浏览与预览
